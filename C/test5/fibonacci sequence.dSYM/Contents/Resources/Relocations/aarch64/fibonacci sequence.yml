@@ -1,5 +1,5 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/tonyjia1028/Documents/code/C/test6/fibonacci sequence'
+binary-path:     '/Users/tonyjia1028/Documents/code/C/test5/fibonacci sequence'
 relocations:     []
 ...

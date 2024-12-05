@@ -1,3 +1,14 @@
+//数值类型
+
+int a = 1;
+double b = 2;//没有float,double既可以是浮点型也可以是整形
+
+//运算符：与C语言大体相同
+
+//布尔(bool)类型(true/false)
+bool t = true;
+bool f = false;//只能赋true或false
+
 //字符串定义方式
 var str = "Hello world";
 String str1 = "Dart";

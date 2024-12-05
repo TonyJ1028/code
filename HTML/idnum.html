@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Number Verification</title>
+</head>
+<body>
+    <h1>ID Number Verification</h1>
+    <form method="post">
+        <label for="num">请输入 ID 数量:</label>
+        <input type="number" id="num" name="num" required>
+        <br><br>
+        <label for="idnum">请输入 ID 号码 (每个 ID 号码以换行分隔):</label><br>
+        <textarea id="idnum" name="idnum" rows="10" cols="30" required></textarea>
+        <br><br>
+        <input type="submit" value="验证">
+    </form>
+    <h2>结果:</h2>
+    <p>{{ result }}</p>
+</body>
+</html>
