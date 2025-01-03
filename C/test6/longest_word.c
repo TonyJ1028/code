@@ -25,27 +25,40 @@ The cat gets a job.
 4
 */
 #include<stdio.h>
+
 int main()
 {
     char pharase[1000];
-    scanf("%s",pharase);
+    for(int i = 0; i < 1000; i ++)
+    {
+        pharase[i] = 0;
+    }
+
+    fgets(pharase, 100, stdin);
 
     int length = 0;
     int max_length = 0;
     for(int i = 0; i < 1000; i++)
     {
-        if(pharase[i] == 0)
-        {
-            break;  
-        }
-        if(pharase[i] == ' ' && length >= max_length)
+        
+        if(pharase[i] == 32 && length >= max_length)
         {
             max_length = length;
             length = 0;
+            continue;
         }
-        else if(pharase[i] == ' ')
+        else if(pharase[i] == 32)
         {
             length = 0;
+            continue;
+        }
+        if(pharase[i] == '.')
+        {
+            if(length >= max_length)
+            {
+                max_length = length;
+            }
+            break;  
         }
         length++;
     }
